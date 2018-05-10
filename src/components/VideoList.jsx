@@ -1,6 +1,7 @@
 var VideoList = props =>
   (
-    <div className="video-list">{
+    <div className="video-list">
+      {
       props.videos.map(video => {
         return <VideoListEntry key={video.id.videoId} onVideoChange={props.onVideoChange} video={video} />
       })}
