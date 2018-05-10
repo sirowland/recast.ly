@@ -7,11 +7,14 @@
   "private": true,
   "scripts": {
     "test": "live-server --open=./SpecRunner.html --port=8081",
-    "postinstall": "curl -s https://raw.githubusercontent.com/reactorcore/pomander/master/bin/install | bash"
+    "postinstall": "curl -s https://raw.githubusercontent.com/reactorcore/pomander/master/bin/install | bash",
+    "start": "live-server",
+    "build": "babel src -d lib"
   },
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.2",
     "jquery": "^2.2.1",
+    "live-server": "^1.2.0",
     "lodash": "^4.6.1",
     "react": "^0.14.7",
     "react-dom": "^0.14.7"
